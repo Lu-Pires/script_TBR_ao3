@@ -3,7 +3,7 @@ This is a fork of serpentineegg's Fictrail userscript, with minor changes so it 
 # How to Install it
 You must have an extension that allows you to use usercripts, like [Greasemonek](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) or [TamperMonkey](https://www.tampermonkey.net/)
 ## Option A: UserScript
- - Install the userscript available [here](https://greasyfork.org/en/scripts/588555-ao3-tbr)
+ - Install the userscript [here](https://greasyfork.org/en/scripts/588555-ao3-tbr)
  - Check your Marked for later at ```archiveofourown.org/users/YOUR USER/readings?show=to-read```
 ## Option B: Github
  - Direct download from Github [here](complete_script.js)
