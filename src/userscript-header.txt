@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name         FicTrail - AO3 History Viewer
-// @namespace    https://github.com/serpentineegg/fictrail
-// @version      0.0.0-dev
-// @description  Advanced search and filtering for your reading history. Find fics by title, author, fandom, tags, or summary.
-// @author       serpentineegg
-// @match        https://archiveofourown.org/users/*/readings*
+// @name         AO3 Marked for Later searcher
+// @namespace    https://github.com/Lu-Pires/script_TBR_ao3/
+// @version      0.1
+// @description  A fork of Fictrail by Serpentinegg that allows you to search and filter your Marked for Later. Find fics by title, author, fandom, tags, or summary.
+// @author       Lu-Pires
+// @match        https://archiveofourown.org/users/*/readings?show=to-read
 // @grant        GM_addStyle
 // @run-at       document-idle
 // @license      MIT
