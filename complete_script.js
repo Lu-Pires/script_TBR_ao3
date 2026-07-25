@@ -1,15 +1,12 @@
 // ==UserScript==
-// @name         AO3 TBR
-// @namespace    https://github.com/serpentineegg/fictrail
+// @name         AO3 TBR Searcher
+// @namespace    https://github.com/Lu-Pires/script_TBR_ao3
 // @version      0.4.2
-// @description  a fork of serpentineeg's fictrail so you can filter and search your Marked For Later
-// @author       laslus
+// @description  a fork of serpentineeg's fictrail so you can filter and search your Marked For Later// @author       laslus
 // @match        https://archiveofourown.org/users/*/readings?show=to-read
 // @grant        GM_addStyle
 // @run-at       document-idle
 // @license      MIT
-// @downloadURL https://update.greasyfork.org/scripts/549726/FicTrail%20-%20AO3%20History%20Viewer.user.js
-// @updateURL   https://update.greasyfork.org/scripts/549726/FicTrail%20-%20AO3%20History%20Viewer.meta.js
 // ==/UserScript==
 
 // This is the complete script available at GreasyFork. I'll only update it when I push the changes onto greasyfork, so this might be slightly different than the codes available on src
@@ -21,7 +18,7 @@
 const AO3_BASE_URL = 'https://archiveofourown.org';
 const MAX_PAGES_FETCH = 100;
 const ITEMS_PER_PAGE = 20;
-const DEFAULT_PAGES_TO_LOAD = 10;
+const DEFAULT_PAGES_TO_LOAD = 5;
 const PAGE_FETCH_DELAY = 100;
 const CACHE_EXPIRY_MS = 30 * 60 * 1000; // 30 minutes
 
