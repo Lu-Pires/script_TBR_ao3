@@ -52,7 +52,7 @@ async function reloadHistory() {
   }
 
   try {
-    showFicTrailLoading(`Loading ${pagesToLoad} ${pagesToLoad === 1 ? 'page' : 'pages'} of ${username}'s fic history...`);
+    showFicTrailLoading(`Loading ${pagesToLoad} ${pagesToLoad === 1 ? 'page' : 'pages'} of ${username}'s Marked For Later...`);
     const result = await fetchMultiplePagesWithCache(username, pagesToLoad);
 
     if (result.works && result.works.length > 0) {
@@ -116,7 +116,7 @@ function displayHistory(username, works, totalPages, actualPagesLoaded, preserve
     const cachedPageCount = getCachedPageCount();
     const toggleText = document.getElementById('fictrail-toggle-text');
     if (toggleText) {
-      toggleText.textContent = `${actualPagesLoaded}/${totalPages} History Pages Loaded`;
+      toggleText.textContent = `${actualPagesLoaded}/${totalPages} Pages Loaded`;
     }
   }
 
