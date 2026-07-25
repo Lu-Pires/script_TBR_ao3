@@ -172,7 +172,7 @@ function scrapeHistoryFromPage(doc) {
 }
 
 async function fetchHistoryPage(username, page = 1) {
-  const url = `${AO3_BASE_URL}/users/${username}/readings?page=${page}`;
+  const url = `${AO3_BASE_URL}/users/${username}/readings?show=to-read&page=${page}`;
 
   try {
     const response = await fetch(url);
@@ -232,7 +232,7 @@ async function fetchMultiplePagesWithCache(username, maxPagesToFetch = MAX_PAGES
     clearCache();
 
     try {
-      const firstPageUrl = `${AO3_BASE_URL}/users/${username}/readings?page=1`;
+      const firstPageUrl = `${AO3_BASE_URL}/users/${username}/readings?show=to-read&showpage=1`;
       const response = await fetch(firstPageUrl);
       const html = await response.text();
       const parser = new DOMParser();
