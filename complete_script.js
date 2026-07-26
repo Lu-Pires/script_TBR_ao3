@@ -1173,14 +1173,14 @@ function createOverlay() {
   // HTML template will be injected here during build
   fictrailDiv.innerHTML = `<!--Descriptive page name, messages and instructions-->
 <h2 class="heading">
-    History + FicTrail
+    Search your marked for later
 </h2>
 <!--/descriptions-->
 
 <!--subnav-->
 <ul class="navigation actions" role="navigation">
     <li>
-        <span class="current">FicTrail</span>
+        <span class="current">Search TBR</span>
     </li>
     <li>
         <a id="fictrail-full-history-link" href="">Full History</a>
@@ -1384,7 +1384,7 @@ function openFicTrail() {
 
   // Check if we have valid cached data
   if (isCacheValid() && getCachedPageCount() > 0) {
-    console.log('Reopening FicTrail with cached data');
+    console.log('Reopening with cached data');
     const works = [];
     const maxCachedPage = getMaxCachedPage();
 
@@ -1424,7 +1424,7 @@ function showFicTrailState(stateId) {
   });
 }
 
-function showFicTrailLoading(message = 'Summoning your fic history...') {
+function showFicTrailLoading(message = 'Locking in your TBR signal...') {
   showFicTrailState('fictrail-loading');
   const statusElement = document.getElementById('fictrail-loading-status');
   if (statusElement) {
@@ -1791,7 +1791,7 @@ async function reloadHistory() {
   }
 
   try {
-    showFicTrailLoading(`Loading ${pagesToLoad} ${pagesToLoad === 1 ? 'page' : 'pages'} of ${username}'s fic history...`);
+    showFicTrailLoading(`Loading ${pagesToLoad} ${pagesToLoad === 1 ? 'page' : 'pages'} of ${username}'s marked for later...`);
     const result = await fetchMultiplePagesWithCache(username, pagesToLoad);
 
     if (result.works && result.works.length > 0) {
