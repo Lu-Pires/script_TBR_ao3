@@ -1197,7 +1197,7 @@ function createOverlay() {
 
 <!--main content-->
 <h3 class="landmark heading">
-    History Items + FicTrail
+    Search your Marked for Later
 </h3>
 
 <!-- Loading State -->
@@ -1254,7 +1254,7 @@ function createOverlay() {
         <div class="fictrail-pages-toggle" id="fictrail-pages-toggle" tabindex="0">
             <div class="fictrail-toggle-header">
                 <span class="fictrail-toggle-icon">▶</span>
-                <span class="fictrail-toggle-text" id="fictrail-toggle-text">History Pages Loaded</span>
+                <span class="fictrail-toggle-text" id="fictrail-toggle-text">Pages Loaded</span>
             </div>
         </div>
 
@@ -1276,7 +1276,7 @@ function createOverlay() {
                     </div>
 
                     <div class="fictrail-actions actions">
-                        <a id="fictrail-load-btn" style="cursor: pointer;" tabindex="0">Load History</a>
+                        <a id="fictrail-load-btn" style="cursor: pointer;" tabindex="0">Load Marked for Later</a>
                     </div>
                 </fieldset>
             </form>
@@ -1864,7 +1864,7 @@ function displayHistory(username, works, totalPages, actualPagesLoaded, preserve
   const loadBtn = document.getElementById('fictrail-load-btn');
   if (pagesInfo) pagesInfo.style.display = 'block';
   if (loadBtn) {
-    loadBtn.textContent = 'Reload History';
+    loadBtn.textContent = 'Reload';
     loadBtn.onclick = reloadHistory;
   }
   updateReloadButtonText();
